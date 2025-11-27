@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Furniro — Home</title>
+
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <div class="brand">
+            <a href="#" class="brand-link">
+                <img src="./pics/logo (3).png" alt="Furniro logo" class="brand-logo">
+                <span class="brand-text">Furniro</span>
+            </a>
+        </div>
+
+        <nav class="main-nav" id="mainNav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-utilities">
+            <button class="icon-btn"><i class="fas fa-user"></i></button>
+            <button class="icon-btn"><i class="fas fa-search"></i></button>
+            <button class="icon-btn"><i class="fas fa-heart"></i></button>
+            <button class="icon-btn"><i class="fas fa-shopping-cart"></i></button>
+        </div>
+
+        <button id="hamburger" class="hamburger" aria-label="Open menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-media" style="background-image: url('./pics/final\ banner.png')"></div>
+
+    <div class="hero-content container">
+        <div class="hero-card">
+            <p class="eyebrow">New Arrival</p>
+            <h1 class="hero-title">Discover Our<br>New Collection</h1>
+            <p class="hero-copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+            <div class="hero-actions">
+                <a href="#" class="btn primary">Buy Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<main>
+
+    <!-- BROWSE RANGE -->
+    <section class="browse-range container">
+        <h2 class="section-title">Browse The Range</h2>
+        <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <div class="range-grid">
+            <a class="range-card" href="#">
+                <div class="range-thumb" style="background-image: url('./pics/din.png')"></div>
+                <span class="range-label">Dining</span>
+            </a>
+
+            <a class="range-card" href="#">
+                <div class="range-thumb" style="background-image: url('./pics/k.png')"></div>
+                <span class="range-label">Living</span>
+            </a>
+
+            <a class="range-card" href="#">
+                <div class="range-thumb" style="background-image: url('./pics/bedroom.png')"></div>
+                <span class="range-label">Bedroom</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="our-products container">
+        <h2 class="section-title">Our Products</h2>
+
+        <div class="products-grid">
+            <!-- Card 1 -->
+            <article class="product-card">
+                <div class="product-thumb" style="background-image: url('./pics/1.png')">
+                    <span class="badge badge-discount">-30%</span>
+                </div>
+                <div class="product-body">
+                    <h3 class="product-name">Syltherine</h3>
+                    <p class="product-desc">Stylish cafe chair</p>
+                    <div class="product-prices">
+                        <span class="price-current">Rp 2.500.000</span>
+                        <span class="price-old">Rp 3.500.000</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 2 (with hover overlay) -->
+            <article class="product-card">
+                <div class="product-thumb product-thumb-overlay" style="background-image: url('./pics/5.png')">
+                    <div class="overlay">
+                        <button class="btn small">Add to cart</button>
+                    </div>
+                </div>
+                <div class="product-body">
+                    <h3 class="product-name">Leviosa</h3>
+                    <p class="product-desc">Stylish cafe chair</p>
+                    <div class="product-prices">
+                        <span class="price-current">Rp 2.500.000</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="product-card">
+                <div class="product-thumb" style="background-image: url('./pics/2.png')">
+                    <span class="badge badge-discount">-50%</span>
+                </div>
+                <div class="product-body">
+                    <h3 class="product-name">Lolito</h3>
+                    <p class="product-desc">Luxury big sofa</p>
+                    <div class="product-prices">
+                        <span class="price-current">Rp 7.000.000</span>
+                        <span class="price-old">Rp 14.000.000</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="product-card">
+                <div class="product-thumb" style="background-image: url('./pics/3.png')">
+                    <span class="badge badge-new">New</span>
+                </div>
+                <div class="product-body">
+                    <h3 class="product-name">Respira</h3>
+                    <p class="product-desc">Outdoor bar table and stool</p>
+                    <div class="product-prices">
+                        <span class="price-current">Rp 500.000</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 5 -->
+            <article class="product-card">
+                <div class="product-thumb" style="background-image: url('./pics/4.png')"></div>
+                <div class="product-body">
+                    <h3 class="product-name">Grifo</h3>
+                    <p class="product-desc">Night lamp</p>
+                    <div class="product-prices"><span class="price-current">Rp 1.500.000</span></div>
+                </div>
+            </article>
+
+            <!-- Card 6 -->
+            <article class="product-card">
+                <div class="product-thumb" style="background-image: url('./pics/6.png')">
+                    <span class="badge badge-new">New</span>
+                </div>
+                <div class="product-body">
+                    <h3 class="product-name">Muggo</h3>
+                    <p class="product-desc">Small mugs</p>
+                    <div class="product-prices"><span class="price-current">Rp 150.000</span></div>
+                </div>
+            </article>
+
+            <!-- Card 7 -->
+            <article class="product-card">
+                <div class="product-thumb" style="background-image: url('./pics/7.png')">
+                    <span class="badge badge-discount">-50%</span>
+                </div>
+                <div class="product-body">
+                    <h3 class="product-name">Pingky</h3>
+                    <p class="product-desc">Cute bed set</p>
+                    <div class="product-prices">
+                        <span class="price-current">Rp 7.000.000</span>
+                        <span class="price-old">Rp 14.000.000</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 8 -->
+            <article class="product-card">
+                <div class="product-thumb" style="background-image: url('./pics/8.png')">
+                    <span class="badge badge-new">New</span>
+                </div>
+                <div class="product-body">
+                    <h3 class="product-name">Potty</h3>
+                    <p class="product-desc">Minimalist flower pot</p>
+                    <div class="product-prices"><span class="price-current">Rp 500.000</span></div>
+                </div>
+            </article>
+        </div>
+
+        <div class="show-more-wrap">
+            <button class="btn outline">Show More</button>
+        </div>
+    </section>
+
+    <!-- INSPIRATION -->
+    <section class="inspiration container">
+        <div class="insp-left">
+            <h3>50+ Beautiful rooms inspiration</h3>
+            <p>Our designer already made a lot of beautiful prototype of rooms that inspire you</p>
+            <a class="btn primary" href="#">Explore More</a>
+        </div>
+
+        <div class="insp-right">
+            <div class="insp-slider">
+                <div class="slide" style="background-image: url('./pics/9.png')"></div>
+                <div class="slide" style="background-image: url('./pics/10.png')"></div>
+                <div class="slide" style="background-image: url('./pics/9.png')"></div>
+            </div>
+
+            <div class="slider-meta">
+                <div class="meta-left">
+                    <small>01 — Bed Room</small>
+                    <h4>Inner Peace</h4>
+                </div>
+                <button class="slider-arrow">→</button>
+            </div>
+        </div>
+    </section>
+
+   
+    <!-- <section class="funiro container">
+        <h3 class="funiro-heading">Share your setup with <span>#FuniroFurniture</span></h3>
+
+        <div class="funiro-grid">
+            <div class="f big"><img src="./pics/a.png" alt=""></div>
+            <div class="f"><img src="./pics/b.png" alt=""></div>
+            <div class="f"><img src="./pics/d.png" alt=""></div>
+            <div class="f wide"><img src="./pics/f.png" alt=""></div>
+            <div class="f tall"><img src="./pics/g.png" alt=""></div>
+            <div class="f"><img src="./pics/c.png" alt=""></div>
+            <div class="f"><img src="./pics/e.png" alt=""></div>
+            <div class="f wide"><img src="./pics/h.png" alt=""></div>
+            <div class="f"><img src="./pics/kk.png" alt=""></div>
+        </div>
+    </section> -->
+
+    <div class="grid">
+
+
+
+
+    </div>
+
+
+
+
+
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div class="col">
+            <h4 class="brand-footer">Funiro.</h4>
+            <address>
+                400 University Drive Suite 200<br>
+                Coral Gables, FL 33134 USA
+            </address>
+        </div>
+
+        <div class="col">
+            <h5>Links</h5>
+            <ul class="footer-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="col">
+            <h5>Help</h5>
+            <ul class="footer-links">
+                <li><a href="#">Payment Options</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Privacy Policies</a></li>
+            </ul>
+        </div>
+
+        <div class="col">
+            <h5>Newsletter</h5>
+            <form class="newsletter">
+                <input type="email" placeholder="Enter Your Email Address" aria-label="email">
+                <button class="btn" type="submit">SUBSCRIBE</button>
+            </form>
+        </div>
+
+        <div class="full-width-copyright">
+            2023 Funiro. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+<!-- JS: hamburger + small slider behaviour -->
+<script>
+    // Hamburger toggle
+    const hamburger = document.getElementById('hamburger');
+    const mainNav = document.getElementById('mainNav');
+
+    hamburger.addEventListener('click', () => {
+        mainNav.classList.toggle('open');
+    });
+
+    // Simple slide auto-advance (keeps things minimal)
+    (function simpleSlider() {
+        const slides = document.querySelectorAll('.insp-right .slide');
+        if (!slides.length) return;
+        let i = 0;
+        setInterval(() => {
+            slides.forEach(s => s.style.opacity = '0');
+            slides[i].style.opacity = '1';
+            i = (i + 1) % slides.length;
+        }, 3500);
+    })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,348 @@
+/* =========================
+   Styles for Furniro (responsive)
+   Paste into styles.css
+   ========================= */
+
+/* Variables */
+:root{
+  --white: #ffffff;
+  --bg: #fbfaf8;
+  --muted: #8b8b8b;
+  --dark: #222;
+  --accent: #B88E2F;
+  --accent-2: #f3e7d3;
+  --success: #2EC1AC;
+  --danger: #E97171;
+  --max: 1200px;
+  --container-pad: 20px;
+  --card-radius: 8px;
+}
+
+/* Reset & base */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  font-family:'Poppins',sans-serif;
+  color:var(--dark);
+  background:var(--bg);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.4;
+}
+
+/* Utility container */
+.container{
+  max-width:var(--max);
+  margin:0 auto;
+  padding:0 var(--container-pad);
+}
+
+/* Header */
+.site-header{
+  background:#fff;
+  border-bottom:1px solid #eee;
+  position:sticky;
+  top:0;
+  z-index:60;
+}
+
+.header-inner{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  padding:14px 0;
+}
+
+.brand-link{display:flex;align-items:center;gap:10px}
+.brand-logo{width:36px;height:36px;object-fit:contain}
+.brand-text{font-weight:700;font-size:20px;color:var(--dark)}
+
+/* nav */
+.main-nav ul{display:flex;gap:28px;list-style:none}
+.main-nav a{color:var(--dark);font-weight:500}
+.header-utilities{margin-left:auto;display:flex;gap:10px;align-items:center}
+.icon-btn{background:transparent;border:0;font-size:16px;cursor:pointer;color:var(--dark)}
+
+/* hamburger */
+.hamburger{display:none;background:transparent;border:0;font-size:20px;cursor:pointer;margin-left:10px}
+
+/* HERO */
+.hero{position:relative;overflow:hidden;background:transparent}
+.hero-media{height:460px;background-size:cover;background-position:center}
+.hero-content{position:absolute;top:44%;left:50%;transform:translate(-8%, -40%);pointer-events:none;width:100%;max-width:900px;padding:0 20px}
+.hero-card{background:var(--accent-2);padding:30px;border-radius:12px;max-width:480px;pointer-events:auto;box-shadow:0 8px 30px rgba(0,0,0,0.06)}
+.eyebrow{font-weight:600;color:var(--muted);margin-bottom:8px}
+.hero-title{font-size:28px;line-height:1.05;margin-bottom:12px;color:var(--dark)}
+.hero-copy{color:#666;margin-bottom:18px}
+.btn{display:inline-block;padding:10px 18px;border-radius:8px;text-decoration:none;border:0;cursor:pointer}
+.btn.primary{background:var(--accent);color:#fff}
+.btn.small{padding:8px 12px;border-radius:6px}
+.btn.outline{background:transparent;border:1px solid var(--accent);color:var(--accent)}
+
+/* Range */
+.browse-range{padding:48px 0 24px;text-align:center;background:transparent}
+.section-title{font-size:20px;margin-bottom:6px}
+.section-subtitle{color:var(--muted);margin-bottom:28px}
+.range-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:start}
+.range-card{display:block;text-align:left}
+.range-thumb{height:220px;border-radius:10px;background-size:cover;background-position:center;box-shadow:0 8px 20px rgba(0,0,0,0.03)}
+.range-label{display:block;text-align:center;margin-top:10px;font-weight:600}
+
+/* Products */
+.our-products{padding:36px 0}
+.products-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.product-card{background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 6px 18px rgba(18,18,18,0.04);display:flex;flex-direction:column}
+.product-thumb{height:210px;background-size:cover;background-position:center;position:relative}
+.product-thumb-overlay .overlay{position:absolute;inset:0;background:rgba(0,0,0,0.45);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .25s}
+.product-thumb-overlay:hover .overlay{opacity:1}
+.badge{position:absolute;top:12px;right:12px;padding:8px 10px;border-radius:999px;color:#fff;font-weight:600;font-size:13px}
+.badge-discount{background:var(--danger)}
+.badge-new{background:var(--success)}
+.product-body{padding:14px;flex:1;display:flex;flex-direction:column;justify-content:space-between}
+.product-name{font-size:16px;margin-bottom:6px}
+.product-desc{color:var(--muted);font-size:13px;margin-bottom:8px}
+.product-prices{display:flex;gap:8px;align-items:center}
+.price-current{font-weight:700}
+.price-old{text-decoration:line-through;color:#9a9a9a;font-size:13px}
+
+/* show more */
+.show-more-wrap{display:flex;justify-content:center;padding:20px 0}
+
+/* Inspiration */
+.inspiration{display:grid;grid-template-columns:1fr 1.2fr;gap:24px;padding:48px 0;background:#f8f4ef;border-radius:8px;margin:22px 0}
+.insp-left h3{font-size:20px;margin-bottom:8px}
+.insp-left p{color:var(--muted);margin-bottom:14px}
+.insp-right{position:relative}
+.insp-slider{display:grid;grid-template-columns:1fr;gap:12px;position:relative;height:280px;overflow:hidden;border-radius:8px}
+.insp-right .slide{position:absolute;inset:0;background-size:cover;background-position:center;border-radius:8px;opacity:0;transition:opacity .6s}
+.insp-right .slide:first-child{opacity:1}
+.slider-meta{display:flex;justify-content:space-between;align-items:center;padding:14px;margin-top:8px;background:#fff;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.04)}
+
+/* Funiro gallery */
+.funiro{padding:40px 0}
+.funiro-heading{text-align:center;font-size:20px;margin-bottom:18px}
+.funiro-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;align-items:start}
+.funiro-grid .f img{width:100%;height:100%;object-fit:cover;border-radius:6px;display:block}
+.big{grid-row:span 2}
+.wide{grid-column:span 2}
+.tall{grid-row:span 2}
+
+/* Footer */
+.site-footer{background:#fff;border-top:1px solid #eee;padding:34px 0;margin-top:28px}
+.footer-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:20px;align-items:start}
+.brand-footer{font-size:20px;margin-bottom:6px}
+.footer-links{list-style:none;padding:0;margin:0}
+.footer-links li{margin-bottom:10px}
+.newsletter{display:flex;gap:8px;align-items:center}
+.newsletter input{padding:8px;border:1px solid #eee;border-radius:6px;flex:1}
+
+/* copyright row */
+.full-width-copyright{grid-column:1/-1;margin-top:14px;color:#777;font-size:13px}
+
+
+
+.grid{
+    background: url(./pics/grid.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+
+
+
+
+/* ====== Responsive ====== */
+@media (max-width: 1100px){
+  .products-grid{grid-template-columns:repeat(3,1fr)}
+  .funiro-grid{grid-template-columns:repeat(3,1fr)}
+}
+
+@media (max-width: 900px){
+  .main-nav ul{display:none}
+  .hamburger{display:inline-block}
+  .main-nav.open ul{display:flex;flex-direction:column;gap:14px;background:#fff;padding:14px;border-radius:8px;position:absolute;right:20px;top:70px;box-shadow:0 10px 30px rgba(0,0,0,0.08)}
+  .hero-media{height:360px}
+  .hero-content{left:40%;transform:translate(-15%,-35%)}
+  .products-grid{grid-template-columns:repeat(2,1fr)}
+  .range-grid{grid-template-columns:repeat(2,1fr)}
+  .funiro-grid{grid-template-columns:repeat(2,1fr)}
+  .inspiration{grid-template-columns:1fr}
+}
+
+@media (max-width: 600px){
+  .hero-media{height:260px}
+  .hero-content{left:8%;transform:none;top:18%;width:92%}
+  .products-grid{grid-template-columns:1fr}
+  .range-grid{grid-template-columns:1fr}
+  .funiro-grid{grid-template-columns:1fr}
+  .container{padding:0 14px}
+  .header-inner{gap:8px}
+  .main-nav.open ul{right:12px;top:62px}
+  .footer-grid{grid-template-columns:1fr}
+  .inspiration{padding:28px 12px}
+}
+/* -------------- HOVER EFFECTS -------------- */
+
+/* Navbar Hover */
+.nav-links a:hover {
+    color: #B88E2F;
+    transition: 0.3s ease;
+}
+
+/* Browse Range Hover */
+.range-item .range-image,
+.range-item .range-image2,
+.range-item .range-image3 {
+    transition: transform .4s ease;
+}
+
+.range-item:hover .range-image,
+.range-item:hover .range-image2,
+.range-item:hover .range-image3 {
+    transform: scale(1.05);
+}
+
+/* Product Card Hover */
+.product-card {
+    transition: 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* Product Image Overlay Hover */
+.product-card .product-image,
+.product-card .product-image2,
+.product-card .product-image3,
+.product-card .product-image4,
+.product-card .product-image5,
+.product-card .product-image6,
+.product-card .product-image7,
+.product-card .product-image8 {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-card .overlay-actions {
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+.product-card:hover .overlay-actions {
+    opacity: 1;
+}
+
+/* Arrow Hover */
+.arrow-btn:hover {
+    background: #B88E2F;
+    color: #fff;
+    transition: .3s ease;
+}
+
+/* Funiro Grid Hover */
+.funiro-grid img {
+    transition: transform .4s ease;
+}
+
+.funiro-grid img:hover {
+    transform: scale(1.03);
+}
+/* =========================
+   GLOBAL HOVER + TRANSITION
+   ========================= */
+
+/* Smooth transition global */
+a, button, img, .product-card, .range-card, .slider-arrow,
+.footer-links a {
+    transition: all .3s ease;
+}
+
+/* -------------------------
+   NAVBAR HOVER
+-------------------------- */
+.main-nav a:hover {
+    color: var(--accent);
+    transform: translateY(-2px);
+}
+
+/* Header icons */
+.icon-btn:hover {
+    color: var(--accent);
+    transform: scale(1.1);
+}
+
+/* -------------------------
+   BROWSE RANGE HOVER
+-------------------------- */
+.range-card:hover .range-thumb {
+    transform: scale(1.05);
+}
+.range-card:hover .range-label {
+    color: var(--accent);
+}
+
+/* -------------------------
+   PRODUCT CARD HOVER
+-------------------------- */
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 26px rgba(0,0,0,0.12);
+}
+
+.product-card:hover .product-name {
+    color: var(--accent);
+}
+
+/* Hover effect for image overlay */
+.product-thumb {
+    transition: transform .3s ease;
+}
+
+.product-thumb:hover {
+    transform: scale(1.04);
+}
+
+/* -------------------------
+   SLIDER (INSPIRATION)
+-------------------------- */
+.slider-arrow {
+    transition: all .3s ease;
+}
+
+.slider-arrow:hover {
+    background: var(--accent);
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Slide small zoom on hover */
+.insp-slider:hover .slide {
+    transform: scale(1.02);
+}
+
+/* -------------------------
+   FUNIRO GRID (GALLERY)
+-------------------------- */
+.funiro-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* -------------------------
+   FOOTER
+-------------------------- */
+.footer-links a:hover {
+    color: var(--accent);
+    margin-left: 4px;
+}
+
+.newsletter button:hover {
+    background: var(--accent);
+    color: #fff;
+    transform: scale(1.05);
+}
