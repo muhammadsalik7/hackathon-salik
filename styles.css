@@ -171,6 +171,22 @@ body{
   .range-grid{grid-template-columns:repeat(2,1fr)}
   .funiro-grid{grid-template-columns:repeat(2,1fr)}
   .inspiration{grid-template-columns:1fr}
+
+
+
+
+
+  .grid{
+        min-height: 45vh;
+        background-position: top center;
+    }
+
+
+
+
+
+
+
 }
 
 @media (max-width: 600px){
@@ -184,6 +200,20 @@ body{
   .main-nav.open ul{right:12px;top:62px}
   .footer-grid{grid-template-columns:1fr}
   .inspiration{padding:28px 12px}
+
+
+
+  .grid{
+        min-height: 30vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+
+
+
+
 }
 /* -------------- HOVER EFFECTS -------------- */
 
